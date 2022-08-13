@@ -6,7 +6,7 @@
 
 ## Time Taken 
 ```
-3 Hours
+5 Hours
 ```
 
 ## Skills Gained
