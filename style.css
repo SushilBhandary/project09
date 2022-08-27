@@ -5,7 +5,7 @@
 * {
   font-family: "Poppins", sans-serif;
 }
-
+ 
 header{
   height: 500px;
   background-color: #3400FF;
@@ -14,6 +14,10 @@ header{
 
 .nav-item{
   padding: 10px;
+}
+
+.nav-item:hover{
+  color: #949292;
 }
 
 nav>svg{
@@ -30,6 +34,12 @@ nav{
   background-color: #ffffff;
   padding: 3px;
   border-radius: 5px;
+}
+
+.nav-item-active:hover{
+  color: #ffffff;
+  background-color: #3400FF;
+  border: 1px solid #ffffff;
 }
 
 .logo{
@@ -70,7 +80,7 @@ nav{
   width: 100%;
 }
 
-.card-active{
+.card:hover{
   box-shadow: 5px 5px 5px 5px #5d5b5bd4;
   padding: 20px;
   border-radius: 10px;
@@ -91,10 +101,13 @@ nav{
 
 .blog-card{
   width: 50%;
-  box-shadow: 5px 5px 5px 5px #a6a4a4d4;
   height: 287px;
   margin: 40px 30px;
   border-radius: 10px;
+}
+
+.blog-card:hover{
+  box-shadow: 5px 5px 5px 5px #a6a4a4d4;
 }
 
 .blog-content{
@@ -148,6 +161,10 @@ nav{
   width: 100px;
 }
 
+.faq-content>button:hover{
+  background-color: #4023b3;
+}
+
 .download-section{
   display: flex;
   justify-content: space-around;
@@ -186,6 +203,10 @@ nav{
 
 }
 
+.download-email button:hover{
+  background-color: #4023b1;
+}
+
 .footer-section{
   background-color: #3400FF;
   display: flex;
@@ -205,6 +226,10 @@ nav{
   padding: 0 30px;
   color: #ffffff;
   font-weight: 100;
+}
+
+.list-items:hover{
+  color: #968f8f;
 }
 
 .list>li:nth-child(3){
@@ -237,4 +262,60 @@ nav{
   margin-left: 10px;
   position: relative;
   left: 100px;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .header-text>h2{
+    font-size: 15px;
+    font-weight: 500
+  }
+  .header-text>p{
+    font-size: 10px;
+  }
+  .companies{
+    display: flex;
+    flex-direction: column;
+  }
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+  }
+  .blog-cards{
+    flex-direction: column;
+  }
+ 
+  .faq-image{
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .header-text>h2{
+    font-size: 15px;
+    font-weight: 500
+  }
+  .header-text>p{
+    font-size: 10px;
+  }
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+  }
+  .faq-image{
+    width: 10vw;
+  }
+  .download-section{
+    flex-direction: column;
+  }
+  .header-image{
+    top: 0px;
+  }
+  .companies{
+    margin-top: 250px;
+    flex-direction: row;
+  }
+  
 }
